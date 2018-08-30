@@ -1,0 +1,39 @@
+1. Create a folder and named "inv_project" in C:\xampp\htdocs location.
+Now, Create another folder in the main folder name: "public_html".
+In public_html folder create some folder: "css","database","images","includes","js".
+
+Now, Bring this project in the "Sublime Text" editor.
+
+
+2.Now create a php file named:  "index.php"  in public_html  folder.
+Now added  this code  in the head section  in  "index.php"
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Inventory Management System</title>
+	<!--Jquery CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+Also  added this code in  body section and check that all are working:
+
+<div class="jumbotron">
+	<h1>I am working</h1>
+</div>
+
+
+Also Added this script outside the html to check that all are working::
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		alert("Biplob World");
+	})
+</script>>
+
+
+All work clearly..
