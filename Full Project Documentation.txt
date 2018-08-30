@@ -37,3 +37,68 @@ Also Added this script outside the html to check that all are working::
 
 
 All work clearly..
+
+
+
+3. Create "main.js"  file in js folder. and link with "index.php":
+<script type="text/javascript" src="./js/main.js"></script>
+
+and also added this code and check will it work or not:
+
+$(document).ready(function(){
+    alert("Biplob World");
+})
+
+
+Now,
+In the "database" folder create two php file:
+"db.php"  and "constants.php"
+
+
+Now create a database named:  "project_inv".
+
+Now added this code in "constants.php":
+
+<?php
+
+define("HOST", "localhost");
+define("USER", "root");
+define("PASS", "");
+define("DB", "project_inv");
+
+?>
+
+
+ANd added this code in  "db.php":
+
+<?php
+
+/**
+*
+*/
+
+class Database
+{
+	private $con;
+
+	public function connect(){
+		include_once("constants.php");
+		$this->con = new Mysqli(HOST,USER,PASS,DB);
+		if($this->con) {
+			echo "Connected";
+			return $this->con;
+		}
+		return "DATABASE_CONNECTION_FAIL";
+	}
+}
+
+$db = new Database();
+$db->connect();
+
+
+?>
+
+
+
+Now check that all are working or not.
+=>   all  worked succesfully.
