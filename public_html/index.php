@@ -21,9 +21,12 @@
 	<?php include_once("./templates/header.php"); ?>
 	<br/><br/>
 	<div class="container">
+		<!--added card in "index.php" from this site:https://getbootstrap.com/docs/4.1/components/card/-->
 		<div class="card mx-auto" style="width: 20rem;">
 		  <img class="card-img-top mx-auto" style="width:60%;" src="./images/login.png" alt="Card image cap">
 		  <div class="card-body">
+
+		  	<!--added form in "index.php" from this site: https://getbootstrap.com/docs/4.1/components/forms/-->
 		    <form>
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">Email address</label>
