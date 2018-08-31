@@ -17,22 +17,29 @@
     <script type="text/javascript" src="./js/main.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Inventory System</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fa fa-home">&nbsp;</i>Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fa fa-user">&nbsp;</i>Logout</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
+	<!-- Navbar -->
+	<?php include_once("./templates/header.php"); ?>
+	<br/><br/>
+	<div class="container">
+		<div class="card mx-auto" style="width: 20rem;">
+		  <img class="card-img-top mx-auto" style="width:60%;" src="./images/login.png" alt="Card image cap">
+		  <div class="card-body">
+		    <form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  <button type="submit" class="btn btn-primary"><i class="fa fa-lock">&nbsp;</i>Login</button>
+			  <span><a href="#">Register</a></span>
+			</form>
+		  </div>
+		  <div class="card-footer"><a href="#">Forget Password ?</a></div>
+	    </div>
+	</div>
 </body>
 </html>
