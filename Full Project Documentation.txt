@@ -311,3 +311,137 @@ Full Code in "dashboard.php":
 	</div>
 </body>
 </html>
+
+
+
+7. Now Added Modal from this link and then modify as the requirement:
+https://getbootstrap.com/docs/4.1/components/modal/
+
+Create a new php file in "templates" folder named: "category.php","brand.php" and "products.php" for hold modal code.
+
+Added this in the category,brand and products add button in "dashboard.php": data-toggle="modal" data-target="#form_category"  and using php include this 3 php file.
+and added the modal code in this 3 php file:  "category.php","brand.php" and "products.php" 
+
+"dashboard.php"  code:
+<!--Create new div for Categories,Brands and Products-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Categories</h5>
+						<p class="card-text">Here you can manage your categories and you add new parent and sub categories</p>
+						<a href="#"  data-toggle="modal" data-target="#form_category" class="btn btn-primary">Add</a>
+						<a href="#" class="btn btn-primary">Manage</a>
+					</div>
+				</div>
+			   </div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Brands</h5>
+						<p class="card-text">Here you can manage your brand and you add new brand</p>
+						<a href="#"  data-toggle="modal" data-target="#form_brand"  class="btn btn-primary">Add</a>
+						<a href="#" class="btn btn-primary">Manage</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Products</h5>
+						<p class="card-text">Here you can manage your products and you add new products</p>
+						<a href="#"  data-toggle="modal" data-target="#form_products"  class="btn btn-primary">Add</a>
+						<a href="#" class="btn btn-primary">Manage</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<?php
+	//Category Form
+	include_once("./templates/category.php");
+	?>
+	<?php
+	//Category Form
+	include_once("./templates/brand.php");
+	?>
+	<?php
+	//Category Form
+	include_once("./templates/products.php");
+	?>
+
+
+"category.php" code:
+
+	<!-- Modal -->
+	<div class="modal fade" id="form_category" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+"brand.php" Code:
+
+	<!-- Modal -->
+	<div class="modal fade" id="form_brand" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+"products.php":
+
+	<!-- Modal -->
+	<div class="modal fade" id="form_products" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
