@@ -51,11 +51,10 @@
 					</div>
 					<button type="submit" name="user_register" class="btn btn-primary"><span class="fa fa-user"></span>&nbsp;Register</button>
 					<span><a href="index.php">Login</a></span>
-				</form>
-				
+				</form>				
 			</div>
 			<div class="card-footer text-muted">
-				<a href="#">forgotten password?</a>
+
 			</div>
 		</div>
 	</div>
