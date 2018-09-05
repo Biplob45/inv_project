@@ -529,3 +529,38 @@ and create table named:  "user"  and number of column: 8
 - register_date  - DATE
 - last_login     - DATE
 - notes          - VARCHAR   - 255  
+
+
+
+
+Now in the "includes" folder create a php file named: "user.php":
+
+"user.php" code:
+<?php
+
+/**
+ * User Class for account creation and login purpose.
+ */
+class User
+{
+	private $con;
+	
+	function __construct()
+	{
+		include_once("../database/db.php");
+		$db = new Database();
+		$this->con = $db->connect();
+		if ($this->con) {
+			echo "Connected";
+		}
+
+	}
+}
+
+$obj = new User();
+
+?>
+
+NOw run this link http://localhost/inv_project/public_html/includes/user.php  and check the database.
+
+All okk.
