@@ -515,3 +515,17 @@ and added the modal code in this 3 php file:  "category.php","brand.php" and "pr
 	</div>
 </body>
 </html>
+
+
+
+9. Now the database part:
+Go to the database phpmyadmin:  http://localhost/phpmyadmin/db_structure.php?server=1&db=project_inv
+and create table named:  "user"  and number of column: 8
+- id             - INT       - 11            PRIMARY KEY   AI(Auto Incremented)
+- username       - VARCHAR   - 255
+- email          - VARCHAR   - 255
+- password       - VARCHAR   - 300
+- usertype       - ENUM      - 'Admin','Other'
+- register_date  - DATE
+- last_login     - DATE
+- notes          - VARCHAR   - 255  
